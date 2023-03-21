@@ -2,7 +2,7 @@
 /**
   *main - Entry point
   *description:'a C program that prints the size of various types'
-  *Return always 0 (success)
+  *Return: always 0
   */
 int main(void)
 {
