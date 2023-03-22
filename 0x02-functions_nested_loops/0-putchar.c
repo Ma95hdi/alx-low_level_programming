@@ -1,14 +1,14 @@
 #include "main.h"
 /**
   *main - Entry point
-  *description:'a program that prints _putchar'
+  *description:'prints _putchar to stdout'
   *Return: always 0
   */
 int main(void)
 {
 	_putchar('_');
 	_putchar('p');
-	_putchar('u');
+	_putchar('t');
 	_putchar('c');
 	_putchar('h');
 	_putchar('a');
