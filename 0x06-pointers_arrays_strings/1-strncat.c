@@ -2,11 +2,11 @@
 #include "main.h"
 
 /**
- * _strncat - concatenates two strings
- * @dest: input value
- * @src: input value
- * @n: input value
- * Return: dest
+ * _strncat - function that concatenates two strings
+ * @dest: first string
+ * @src: second string
+ * @n: number of bytes to concatenate
+ * Return: pointer to designated
  */
 char *_strncat(char *dest, char *src, int n)
 {
