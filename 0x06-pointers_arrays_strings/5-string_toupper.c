@@ -10,7 +10,7 @@ char *string_toupper(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		str[i] = str[i];
+		str[i] = (int)str[i];
 	}
 	return (str);
 }
