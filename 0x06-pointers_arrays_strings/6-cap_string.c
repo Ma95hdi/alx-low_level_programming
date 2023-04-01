@@ -1,33 +1,33 @@
 #include "main.h"
 /**
  * cap_string - function that capitalizes all words of a string
- * @str: the string
- * Return: str
+ * @str: pointer tostring
+ * Return: pointer to str
  */
 char *cap_string(char *str)
 {
 	int i;
 
-	str[0] = toupper(str[0]);
-
-	for (i = 1; str[i] != '\0'; i++)
-	{
+	/*scan through string*/
+	i = 0;
+	while (str[i] != '\0')
+	{/* if next character after i is a char, capitalise it */
+		if (str[0] >= 97 && str[0] <= 122)
+		{
+			str[0] = str[0] - 32;
+		}
 		if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' ||
 				str[i] == ',' || str[i] == ';' || str[i] == '.' ||
 				str[i] == '!' || str[i] == '?' || str[i] == '"' ||
 				str[i] == '(' || str[i] == ')' || str[i] == '{' || str[i] == '}')
 		{
-			i++;
-			if (str[i] != '\0')
+			if (str[i + 1] >= 97 && str[i + 1] <= 122)
 			{
-				str[i] = toupper(str[i]);
+				str[i + 1] = (str[i + 1] - 32);
 			}
-		else
-		{
-			str[i] = tolower(str[i]);
 		}
+		i++;
 	}
-
 	return (str);
 }
 
