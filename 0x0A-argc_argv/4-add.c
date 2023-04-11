@@ -4,7 +4,7 @@
 /**
   *main - it all starts here
   *@argc: the number of arguments
-  *@argc: array of pointers to arguments
+  *@argv: array of pointers to arguments
   *
   *Return: always 0
   */
