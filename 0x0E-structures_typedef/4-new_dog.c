@@ -20,7 +20,7 @@ int _strlen(const char *str)
 }
 
 /**
- * strcopy - a function that returns @dest with a copy of string from @src
+ * _strcopy - a function that returns @dest with a copy of string from @src
  *
  * @src: string to copy
  * @dest: copy string to nhere
